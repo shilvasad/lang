@@ -237,6 +237,9 @@ const App: React.FC = () => {
       </main>
       <footer className="text-center py-6 text-slate-400 text-sm">
         <p>Created with &hearts; for language learners.</p>
+        <p className="mt-2">
+            Developed by: <a href="https://asad.suyena.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-slate-600 transition-colors">Md. Asad Chowdhary</a>
+        </p>
       </footer>
     </div>
   );

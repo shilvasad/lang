@@ -10,11 +10,14 @@ const Header: React.FC<HeaderProps> = ({ isInstallable, onInstallClick }) => {
   return (
     <header className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-4 md:px-6 md:py-5 flex justify-between items-center">
-        <div>
-            <h1 className="text-2xl md:text-3xl font-bold text-slate-800 tracking-tight">
-              <span className="text-blue-600">Bengali-Italian</span> Phrasebook
-            </h1>
-            <p className="text-slate-500 mt-1">Your personal guide to learning Italian.</p>
+        <div className="flex items-center space-x-4">
+            <img src="/logo.png" alt="Suyena Logo" className="h-14 w-auto" />
+            <div>
+                <h1 className="text-2xl md:text-3xl font-bold text-slate-800 tracking-tight">
+                  <span className="text-blue-600">Bengali-Italian</span> Phrasebook
+                </h1>
+                <p className="text-slate-500 mt-1">Your personal guide to learning Italian.</p>
+            </div>
         </div>
         {isInstallable && (
             <button
